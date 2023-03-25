@@ -13,7 +13,7 @@ function Navbar() {
           <Link to="count">Count</Link>
         </li>
         <li>
-          <Link to="react-hook">React-Hook</Link>
+          <Link to="remove-item">Remove</Link>
         </li>
       </ul>
     </div>

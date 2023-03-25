@@ -7,7 +7,7 @@ const data =[
   {id:5,user: 5},
   {id:6,user: 6},
 ]
-export const ReactHook = ()=>{
+export const RemoveItem = ()=>{
   const [first, setfirst] = React.useState(data)
   function handleDelete(id){
     // console.log(id);
