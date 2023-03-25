@@ -9,6 +9,12 @@ function Navbar() {
         <li>
           <Link to="create-post">Create Post</Link>
         </li>
+        <li>
+          <Link to="count">Count</Link>
+        </li>
+        <li>
+          <Link to="react-hook">React-Hook</Link>
+        </li>
       </ul>
     </div>
   )

@@ -5,6 +5,8 @@ import Navbar  from './Navbar';
 import {Home} from "./Home";
 import {CreatePost} from "./CreatePost";
 import {PostDetail} from "./PostDetail";
+import {ReactHook } from './ReactHook';
+import {Count} from './Count';
 
 function App() {
   return (
@@ -16,6 +18,8 @@ function App() {
         <Route path="/" element={<Home/>} />
         <Route exact path="/post/:postId" element={<PostDetail/>} />
         <Route exact path="/create-post" element={<CreatePost/>} />
+        <Route exact path="/count" element={<Count/>} />
+        <Route exact path="/react-hook" element={<ReactHook/>} />
       </Routes>
       </Router>
     </div>

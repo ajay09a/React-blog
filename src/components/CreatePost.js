@@ -1,20 +1,11 @@
-import { useState } from "react"
 import {firestore} from '../firebase';
+import { useFormInput } from "../hook";
 
 export const CreatePost = ()=>{
-  const [title, setTitle] = useState('');
-  const [SubTitle, setSubTitle] = useState('');
-  const [Content, setContent] = useState('');
+  const title = useFormInput('');
+  const SubTitle = useFormInput('');
+  const Content = useFormInput('');
 
-  function handleTitle(e){
-    setTitle(e.target.value);
-  }
-  function handleSubTitle(e){
-    setSubTitle(e.target.value);
-  }
-  function handleContent(e){
-    setContent(e.target.value);
-  }
   function handlesubmitbtn(e){
     e.preventDefault();
     console.log('title', title);
@@ -22,9 +13,9 @@ export const CreatePost = ()=>{
     console.log('Content', Content);
 
     firestore.collection('posts').add({
-      title,
-      SubTitle,
-      Content,
+      title: title,
+      Subtitle: SubTitle,
+      Content: Content,
       CreatedAt: new Date(),
     })
   }
@@ -34,15 +25,15 @@ export const CreatePost = ()=>{
       <form onSubmit={handlesubmitbtn}>
       <div>
         <label>Title</label>
-        <input value={title} onChange={handleTitle} />
+        <input {...title} />
       </div>
       <div>
         <label>Sub-title</label>
-        <input value={SubTitle} onChange={handleSubTitle} />
+        <input {...SubTitle} />
       </div>
       <div>
         <label>Content</label>
-        <textarea value={Content} onChange={handleContent} />
+        <textarea {...Content} />
       </div>
       <button>Create</button>
       </form>
