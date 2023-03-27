@@ -18,6 +18,9 @@ function Navbar() {
         <li>
           <Link to="multiple-return">Multiple Return</Link>
         </li>
+        <li>
+          <Link to="list-people">List</Link>
+        </li>
       </ul>
     </div>
   )

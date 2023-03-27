@@ -8,6 +8,7 @@ import {PostDetail} from "./PostDetail";
 import {RemoveItem } from './RemoveItem';
 import {Count} from './Count';
 import {MultipleReturn} from './MultipleReturn'
+import { ListPeople } from './ListPeople';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route exact path="/count" element={<Count/>} />
         <Route exact path="/remove-item" element={<RemoveItem/>} />
         <Route exact path="/multiple-return" element={<MultipleReturn/>} />
+        <Route exact path="/list-people" element={<ListPeople/>} />
       </Routes>
       </Router>
     </div>
