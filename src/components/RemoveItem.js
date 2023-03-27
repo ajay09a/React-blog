@@ -1,12 +1,5 @@
 import React from 'react'
-const data =[
-  {id:1,user: "ajay"},
-  {id:2,user: 2},
-  {id:3,user: 3},
-  {id:4,user: 4},
-  {id:5,user: 5},
-  {id:6,user: 6},
-]
+import { data } from './data'
 export const RemoveItem = ()=>{
   const [first, setfirst] = React.useState(data)
   function handleDelete(id){
