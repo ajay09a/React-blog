@@ -15,6 +15,9 @@ function Navbar() {
         <li>
           <Link to="remove-item">Remove</Link>
         </li>
+        <li>
+          <Link to="multiple-return">Multiple Return</Link>
+        </li>
       </ul>
     </div>
   )
