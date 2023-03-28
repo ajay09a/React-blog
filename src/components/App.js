@@ -11,6 +11,7 @@ import {MultipleReturn} from './MultipleReturn'
 import { ListPeople } from './ListPeople';
 import { UseRef } from './UseRef';
 import { Form } from './Form';
+import { Form2 } from './Form2';
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
         <Route exact path="/list-people" element={<ListPeople/>} />
         <Route exact path="/use-ref" element={<UseRef/>} />
         <Route exact path="/creating-form" element={<Form/>} />
+        <Route exact path="/creating-form2" element={<Form2/>} />
       </Routes>
       </Router>
     </div>

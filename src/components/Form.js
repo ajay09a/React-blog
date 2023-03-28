@@ -20,7 +20,7 @@ export const Form = () => {
         <label>First Name: </label>
         <input value={fname} fname={fname} onChange={(e)=>setfname(e.target.value)} /><br />
         <label>Last Name: </label>
-        <input value={lname} fname={lname} onChange={(e)=>setlname(e.target.value)} /><br />
+        <input value={lname} lname={lname} onChange={(e)=>setlname(e.target.value)} /><br />
         <button type='submit'>Submit</button>
     </form>
     <div>

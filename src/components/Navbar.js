@@ -27,6 +27,9 @@ function Navbar() {
         <li>
           <Link to="creating-form">Form</Link>
         </li>
+        <li>
+          <Link to="creating-form2">Form2</Link>
+        </li>
       </ul>
     </div>
   )
