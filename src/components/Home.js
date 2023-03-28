@@ -14,7 +14,7 @@ export const Home = ()=>{
       });
       setposts(posts);
     })
-  })
+  }, [])
   return( <div>
     <h1>Tech Blog</h1>
     <div id='blog-by'>Ajay</div>

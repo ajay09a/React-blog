@@ -9,7 +9,7 @@ export const PostDetail = ()=>{
     firestore.collection("posts").doc(postId).get().then((snapshot)=>{
       setpost(snapshot.data());
     })
-  })
+  }, [])
   return( <div>
             <h1>{post.title}</h1>
             <p>{post.Content}</p>
