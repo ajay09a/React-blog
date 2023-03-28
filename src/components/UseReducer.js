@@ -11,11 +11,16 @@ const reducer = (state, action)=>{
     else if(action.type === 'RESET_LIST'){
         return {...state, people:data}
     }
+    else if(action.type === 'REMOVE_ITEM'){
+        const newPerson = state.people.filter((person)=>person.id !==action.payload)
+        return {...state, people:newPerson}
+    }
 }
 
 export const UseReducer = () => {
     const [state, dispatch] = useReducer(reducer, defaultReducer)
   function handleDelete(id){
+    dispatch({type: 'REMOVE_ITEM', payload: id})
     // console.log(id);
     // const fdata = first.filter((person)=>person.id !==id)
     // setfirst(fdata);
