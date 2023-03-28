@@ -1,10 +1,10 @@
 export const data =[
-    {id:1,user: "ajay"},
-    {id:2,user: 2},
-    {id:3,user: 3},
-    {id:4,user: 4},
-    {id:5,user: 5},
-    {id:6,user: 6},
+    {id:1,user: "Stoncold"},
+    {id:2,user: "Brock"},
+    {id:3,user: "Roman"},
+    {id:4,user: "Seth"},
+    {id:5,user: "Bobby"},
+    {id:6,user: "John"},
   ]
 
 export const people = [
