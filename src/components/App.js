@@ -10,6 +10,7 @@ import {Count} from './Count';
 import {MultipleReturn} from './MultipleReturn'
 import { ListPeople } from './ListPeople';
 import { UseRef } from './UseRef';
+import { Form } from './Form';
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
         <Route exact path="/multiple-return" element={<MultipleReturn/>} />
         <Route exact path="/list-people" element={<ListPeople/>} />
         <Route exact path="/use-ref" element={<UseRef/>} />
+        <Route exact path="/creating-form" element={<Form/>} />
       </Routes>
       </Router>
     </div>
