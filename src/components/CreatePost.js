@@ -13,9 +13,9 @@ export const CreatePost = ()=>{
     console.log('Content', Content);
 
     firestore.collection('posts').add({
-      title: title,
-      Subtitle: SubTitle,
-      Content: Content,
+      title: title.value,
+      Subtitle: SubTitle.value,
+      Content: Content.value,
       CreatedAt: new Date(),
     })
   }
