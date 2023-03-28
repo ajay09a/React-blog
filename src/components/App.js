@@ -9,6 +9,7 @@ import {RemoveItem } from './RemoveItem';
 import {Count} from './Count';
 import {MultipleReturn} from './MultipleReturn'
 import { ListPeople } from './ListPeople';
+import { UseRef } from './UseRef';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         <Route exact path="/remove-item" element={<RemoveItem/>} />
         <Route exact path="/multiple-return" element={<MultipleReturn/>} />
         <Route exact path="/list-people" element={<ListPeople/>} />
+        <Route exact path="/use-ref" element={<UseRef/>} />
       </Routes>
       </Router>
     </div>

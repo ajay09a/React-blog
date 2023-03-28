@@ -8,8 +8,8 @@ export const Person = (user) => {
     <div style={style.container}>
         <img src={img} alt='user' style={style.image} />
         <div style={style.profile}>
-            <p>Name: {user.user}</p>
-            <p>NickName: {nickname}</p>
+            <p>Name: {user.user}<br />
+            NickName: {nickname}</p>
         </div>
     </div>
   )
@@ -17,8 +17,8 @@ export const Person = (user) => {
 
 const style = {
     image: {
-        width: 100,
-        height: 100,
+        width: 70,
+        height: 70,
         borderRadius: 50
     },
     container: {

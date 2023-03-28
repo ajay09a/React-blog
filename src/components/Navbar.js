@@ -1,13 +1,13 @@
 import {Link} from 'react-router-dom';
 function Navbar() {
   return (
-    <div>
+    <div style={style.navbar}>
       <ul id='nav'>
         <li>
           <Link to="/">Home</Link>
         </li>
         <li>
-          <Link to="create-post">Create Post</Link>
+          <Link to="create-post">Create-Post</Link>
         </li>
         <li>
           <Link to="count">Count</Link>
@@ -16,10 +16,13 @@ function Navbar() {
           <Link to="remove-item">Remove</Link>
         </li>
         <li>
-          <Link to="multiple-return">Multiple Return</Link>
+          <Link to="multiple-return">Multi-Return</Link>
         </li>
         <li>
           <Link to="list-people">List</Link>
+        </li>
+        <li>
+          <Link to="use-ref">UseRef</Link>
         </li>
       </ul>
     </div>
@@ -27,3 +30,12 @@ function Navbar() {
 }
 
 export default Navbar;
+
+
+const style = {
+  navbar: {
+    background: 'blue',
+    paddingTop: 1,
+    height: 55
+  }
+}
