@@ -30,6 +30,9 @@ function Navbar() {
         <li>
           <Link to="creating-form2">Form2</Link>
         </li>
+        <li>
+          <Link to="navbar2">Navbar</Link>
+        </li>
       </ul>
     </div>
   )
