@@ -34,7 +34,7 @@ export default Navbar;
 
 const style = {
   navbar: {
-    background: 'blue',
+    background: 'black',
     paddingTop: 1,
     height: 55
   }
