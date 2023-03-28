@@ -1,10 +1,21 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { NavbarContext } from './Navbar2'
 
 export const PersonDetail = () => {
+    const {user, logout} = useContext(NavbarContext);
   return (
     <div style={style.container}>
-        <p>Hello</p>
-        <button style={style.btn}>Logout</button>
+        {user?(
+            <>
+                <p>Hello {user?.name?.toUpperCase()}</p>
+                <button style={style.btn} onClick={logout}>Logout</button>
+            </>
+        ):
+        (
+            <>
+                <p>please Login</p>
+            </>
+        )}
     </div>
   )
 }
