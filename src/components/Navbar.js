@@ -33,6 +33,9 @@ function Navbar() {
         <li>
           <Link to="navbar2">Navbar</Link>
         </li>
+        <li>
+          <Link to="use-reducer">UseReducer</Link>
+        </li>
       </ul>
     </div>
   )

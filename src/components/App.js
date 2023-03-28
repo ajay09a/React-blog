@@ -13,6 +13,7 @@ import { UseRef } from './UseRef';
 import { Form } from './Form';
 import { Form2 } from './Form2';
 import { Navbar2 } from './navbar2/Navbar2';
+import { UseReducer } from './UseReducer';
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
         <Route exact path="/creating-form" element={<Form/>} />
         <Route exact path="/creating-form2" element={<Form2/>} />
         <Route exact path="/navbar2" element={<Navbar2/>} />
+        <Route exact path="/use-reducer" element={<UseReducer/>} />
       </Routes>
       </Router>
     </div>
